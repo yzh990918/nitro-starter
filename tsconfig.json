@@ -12,6 +12,7 @@
       ]
     }
   },
+  "extends": "./.nitro/types/tsconfig.json",
   "include": [
     ".",
     "./.nitro/types/nitro.d.ts"

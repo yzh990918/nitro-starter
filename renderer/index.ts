@@ -4,9 +4,10 @@ const { baseURL } = useRuntimeConfig().app
 const url = p => withBase(p, baseURL)
 
 const routes = [
-  '/route',
-  '/another/route',
-  '/api/hello'
+  '/api/hello',
+  '/api/hello/jack',
+  '/api/error',
+  '/api/asset',
 ]
 
 const deployments = [
@@ -18,7 +19,7 @@ const deployments = [
   { name: 'Github Pages', url: 'https://unjs.github.io/nitro-deploys/' },
   { name: 'Heroku', url: 'https://nitro-app.herokuapp.com/' },
   { name: 'Lagon', url: 'https://nitro-app.lagon.dev/' },
-  { name: 'Netlify Functions', url: 'https://nitro-deployment.netlify.app/' },
+  { name: 'Netlify Functions', url: 'https://nitro-yzh.netlify.app/' },
   // { name: 'Netflify Edge', url: 'https://nitro-deployment-edge.netlify.app/' },
   { name: 'Render.com', url: 'https://nitro-app.onrender.com/' },
   { name: 'Stormkit', url: 'https://scourgebrick-ppmy24.stormkit.dev/' },
