@@ -1,12 +1,8 @@
-import { defineNitroConfig } from 'nitropack'
-import nitroPkg from 'nitropack/package.json'
+import { defineNitroConfig } from 'nitropack/config'
 import errorHandler from './error'
 
 export default defineNitroConfig({
   renderer: './renderer',
-  runtimeConfig: {
-    nitroVersion: nitroPkg.version
-  },
   publicAssets: [
     {
       baseURL: '/_dist',
